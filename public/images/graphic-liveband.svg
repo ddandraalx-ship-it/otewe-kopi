@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bandBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="50%" stop-color="#18181B" />
+      <stop offset="100%" stop-color="#09090B" />
+    </linearGradient>
+    <linearGradient id="soundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#52525B" stop-opacity="0.1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bandBg)" rx="24" />
+
+  <!-- Acoustic & Soundwave Minimalist Equalizer Graphic -->
+  <g opacity="0.85">
+    <rect x="160" y="200" width="8" height="100" rx="4" fill="url(#soundGrad)" />
+    <rect x="180" y="160" width="8" height="180" rx="4" fill="url(#soundGrad)" />
+    <rect x="200" y="120" width="8" height="260" rx="4" fill="url(#soundGrad)" />
+    <rect x="220" y="180" width="8" height="140" rx="4" fill="url(#soundGrad)" />
+    <rect x="240" y="210" width="8" height="80" rx="4" fill="url(#soundGrad)" />
+
+    <rect x="540" y="210" width="8" height="80" rx="4" fill="url(#soundGrad)" />
+    <rect x="560" y="180" width="8" height="140" rx="4" fill="url(#soundGrad)" />
+    <rect x="580" y="120" width="8" height="260" rx="4" fill="url(#soundGrad)" />
+    <rect x="600" y="160" width="8" height="180" rx="4" fill="url(#soundGrad)" />
+    <rect x="620" y="200" width="8" height="100" rx="4" fill="url(#soundGrad)" />
+  </g>
+
+  <!-- Abstract Guitar Silhouette Line Art (Center) -->
+  <g transform="translate(400,250)" opacity="0.9">
+    <path d="M -40 -120 C -90 -80 -70 20 -40 60 C -10 100 -70 140 -30 180 C 10 210 50 180 30 140 C 70 100 10 60 40 20 C 70 -20 90 -80 40 -120 Z" 
+          fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <circle cx="0" cy="50" r="28" fill="#09090B" stroke="#FFFFFF" stroke-width="2" />
+    <line x1="0" y1="-180" x2="0" y2="180" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.6" />
+  </g>
+
+  <!-- Typography overlay -->
+  <text x="400" y="440" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="6">LIVE BAND SESSION</text>
+  <text x="400" y="465" font-family="'Space Mono', monospace" font-size="11" fill="#A1A1AA" text-anchor="middle" letter-spacing="3">EVERY WEEKEND • JUM'AT - MINGGU NIGHT</text>
+
+  <!-- Glass Border Overlay -->
+  <rect x="16" y="16" width="768" height="468" rx="20" fill="none" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1" />
+</svg>
