@@ -9,9 +9,25 @@
     >
         <div class="flex items-center justify-between px-5 py-3 md:px-8">
 
-            {{-- Official Logo --}}
-            <a href="#top" class="flex items-center gap-2 group">
-                <img src="{{ asset('images/logo-otewe.svg') }}" alt="Otewe Logo" class="h-9 w-auto group-hover:scale-105 transition-transform duration-300">
+            {{-- Official Logo (Inline Vector SVG for 100% Reliability) --}}
+            <a href="#top" class="flex items-center gap-2 group" aria-label="Otewe Kopi Home">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 120" class="h-9 w-auto group-hover:scale-105 transition-transform duration-300">
+                    <defs>
+                        <linearGradient id="logoNavGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#D4A373" />
+                            <stop offset="100%" stop-color="#C08452" />
+                        </linearGradient>
+                    </defs>
+                    <g transform="translate(10, 10)">
+                        <circle cx="50" cy="50" r="46" fill="#C08452" />
+                        <circle cx="50" cy="50" r="42" fill="#0F0D0B" />
+                        <path d="M 32 26 C 24 40 32 60 48 76 C 58 86 72 82 72 74 C 72 60 56 46 42 32 C 36 26 32 26 32 26 Z" fill="url(#logoNavGrad)" />
+                        <path d="M 68 74 C 76 60 68 40 52 24 C 42 14 28 18 28 26 C 28 40 44 54 58 68 C 64 74 68 74 68 74 Z" fill="url(#logoNavGrad)" />
+                        <path d="M 38 28 C 30 42 42 62 62 76 C 52 70 42 56 38 28 Z" fill="#0F0D0B" />
+                    </g>
+                    <text x="120" y="74" font-family="'Inter', 'Plus Jakarta Sans', sans-serif" font-size="64" font-weight="900" fill="#FFFFFF" letter-spacing="-3">Otewe</text>
+                    <text x="122" y="98" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#D4A373" letter-spacing="4">NGOPI · MAKAN · GELATO</text>
+                </svg>
             </a>
 
             {{-- Desktop Nav Links --}}

@@ -39,7 +39,7 @@
     
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-    <link rel="stylesheet" href="http://localhost/css/app.css">
+    <link rel="stylesheet" href="/css/app.css">
 </head>
 <body class="bg-[#0F0D0B] text-slate-100 font-sans antialiased selection:bg-mocha-400 selection:text-black min-h-screen relative overflow-x-hidden">
 
@@ -60,8 +60,24 @@
         <div class="flex items-center justify-between px-5 py-3 md:px-8">
 
             
-            <a href="#top" class="flex items-center gap-2 group">
-                <img src="http://localhost/images/logo-otewe.svg" alt="Otewe Logo" class="h-9 w-auto group-hover:scale-105 transition-transform duration-300">
+            <a href="#top" class="flex items-center gap-2 group" aria-label="Otewe Kopi Home">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 120" class="h-9 w-auto group-hover:scale-105 transition-transform duration-300">
+                    <defs>
+                        <linearGradient id="logoNavGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#D4A373" />
+                            <stop offset="100%" stop-color="#C08452" />
+                        </linearGradient>
+                    </defs>
+                    <g transform="translate(10, 10)">
+                        <circle cx="50" cy="50" r="46" fill="#C08452" />
+                        <circle cx="50" cy="50" r="42" fill="#0F0D0B" />
+                        <path d="M 32 26 C 24 40 32 60 48 76 C 58 86 72 82 72 74 C 72 60 56 46 42 32 C 36 26 32 26 32 26 Z" fill="url(#logoNavGrad)" />
+                        <path d="M 68 74 C 76 60 68 40 52 24 C 42 14 28 18 28 26 C 28 40 44 54 58 68 C 64 74 68 74 68 74 Z" fill="url(#logoNavGrad)" />
+                        <path d="M 38 28 C 30 42 42 62 62 76 C 52 70 42 56 38 28 Z" fill="#0F0D0B" />
+                    </g>
+                    <text x="120" y="74" font-family="'Inter', 'Plus Jakarta Sans', sans-serif" font-size="64" font-weight="900" fill="#FFFFFF" letter-spacing="-3">Otewe</text>
+                    <text x="122" y="98" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#D4A373" letter-spacing="4">NGOPI · MAKAN · GELATO</text>
+                </svg>
             </a>
 
             
@@ -114,12 +130,22 @@
 
     
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] sm:w-[400px] md:w-[480px] max-w-[85vw] pointer-events-none z-0 opacity-[0.035]">
-        <img src="http://localhost/images/logo-otewe.svg" alt="Otewe Watermark" class="w-full h-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 120" class="w-full h-auto">
+            <g transform="translate(10, 10)">
+                <circle cx="50" cy="50" r="46" fill="#FFFFFF" />
+                <circle cx="50" cy="50" r="42" fill="#0F0D0B" />
+                <path d="M 32 26 C 24 40 32 60 48 76 C 58 86 72 82 72 74 C 72 60 56 46 42 32 C 36 26 32 26 32 26 Z" fill="#FFFFFF" />
+                <path d="M 68 74 C 76 60 68 40 52 24 C 42 14 28 18 28 26 C 28 40 44 54 58 68 C 64 74 68 74 68 74 Z" fill="#FFFFFF" />
+                <path d="M 38 28 C 30 42 42 62 62 76 C 52 70 42 56 38 28 Z" fill="#0F0D0B" />
+            </g>
+            <text x="120" y="74" font-family="'Inter', sans-serif" font-size="64" font-weight="900" fill="#FFFFFF" letter-spacing="-3">Otewe</text>
+            <text x="122" y="98" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" letter-spacing="4">NGOPI · MAKAN · GELATO</text>
+        </svg>
     </div>
 
     
     <div class="absolute inset-0 z-0 opacity-25 pointer-events-none">
-        <img src="http://localhost/images/cafe-bg.png" alt="Otewe Coffee Shop Atmosphere" class="w-full h-full object-cover filter brightness-75 contrast-110">
+        <img src="/images/cafe-bg.png" alt="Otewe Coffee Shop Atmosphere" class="w-full h-full object-cover filter brightness-75 contrast-110">
         <div class="absolute inset-0 bg-gradient-to-t from-[#0F0D0B] via-[#0F0D0B]/60 to-[#0F0D0B]"></div>
     </div>
 
@@ -165,11 +191,23 @@
 
             
             <div class="relative z-10 w-full max-w-[300px] sm:max-w-[440px] p-2 sm:p-4 flex flex-col items-center justify-center group">
-                <img 
-                    src="http://localhost/images/logo-otewe.svg" 
-                    alt="Otewe Kopi Official Logo" 
-                    class="w-full h-auto max-h-32 sm:max-h-48 object-contain filter drop-shadow-[0_15px_35px_rgba(192,132,82,0.3)] group-hover:scale-105 transition-transform duration-500"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 120" class="w-full h-auto max-h-32 sm:max-h-48 object-contain filter drop-shadow-[0_15px_35px_rgba(192,132,82,0.3)] group-hover:scale-105 transition-transform duration-500">
+                    <defs>
+                        <linearGradient id="logoHeroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#D4A373" />
+                            <stop offset="100%" stop-color="#C08452" />
+                        </linearGradient>
+                    </defs>
+                    <g transform="translate(10, 10)">
+                        <circle cx="50" cy="50" r="46" fill="#C08452" />
+                        <circle cx="50" cy="50" r="42" fill="#0F0D0B" />
+                        <path d="M 32 26 C 24 40 32 60 48 76 C 58 86 72 82 72 74 C 72 60 56 46 42 32 C 36 26 32 26 32 26 Z" fill="url(#logoHeroGrad)" />
+                        <path d="M 68 74 C 76 60 68 40 52 24 C 42 14 28 18 28 26 C 28 40 44 54 58 68 C 64 74 68 74 68 74 Z" fill="url(#logoHeroGrad)" />
+                        <path d="M 38 28 C 30 42 42 62 62 76 C 52 70 42 56 38 28 Z" fill="#0F0D0B" />
+                    </g>
+                    <text x="120" y="74" font-family="'Inter', 'Plus Jakarta Sans', sans-serif" font-size="64" font-weight="900" fill="#FFFFFF" letter-spacing="-3">Otewe</text>
+                    <text x="122" y="98" font-family="'Inter', sans-serif" font-size="13" font-weight="800" fill="#D4A373" letter-spacing="4">NGOPI · MAKAN · GELATO</text>
+                </svg>
                 <div class="mt-4 sm:mt-8 text-center">
                     <span class="inline-block px-3.5 py-1 rounded-full border border-white/15 bg-zinc-950/70 backdrop-blur-md text-zinc-300 font-mono text-[10px] sm:text-xs font-semibold tracking-widest uppercase">
                         TAMAN APSARI · SURABAYA
@@ -186,12 +224,12 @@
 
     
     <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] sm:w-[400px] md:w-[480px] max-w-[85vw] pointer-events-none z-0 opacity-[0.035]">
-        <img src="http://localhost/images/logo-otewe.svg" alt="Otewe Watermark" class="w-full h-auto">
+        <img src="/images/logo-otewe.svg" alt="Otewe Watermark" class="w-full h-auto">
     </div>
 
     
     <div class="absolute inset-0 z-0 opacity-20 pointer-events-none bg-cover bg-no-repeat filter brightness-75 contrast-110"
-         style="background-image: url('http://localhost/images/otewe-real-food.jpg'); background-position: center top;">
+         style="background-image: url('/images/otewe-real-food.jpg'); background-position: center top;">
         <div class="absolute inset-0 bg-gradient-to-b from-[#0F0D0B] via-[#0F0D0B]/80 to-[#0F0D0B]"></div>
     </div>
 
@@ -776,7 +814,7 @@
 
     
     <div class="absolute inset-0 z-0 opacity-25 pointer-events-none">
-        <img src="http://localhost/images/otewe-real-ambience.jpg" alt="Otewe Real Outdoor Lounge & Beanbag Seating" class="w-full h-full object-cover filter brightness-75 contrast-105">
+        <img src="/images/otewe-real-ambience.jpg" alt="Otewe Real Outdoor Lounge & Beanbag Seating" class="w-full h-full object-cover filter brightness-75 contrast-105">
         <div class="absolute inset-0 bg-gradient-to-r from-[#0F0D0B] via-[#0F0D0B]/85 to-[#0F0D0B]"></div>
     </div>
 
@@ -849,7 +887,7 @@
 
     
     <div class="absolute inset-0 z-0 opacity-15 pointer-events-none">
-        <img src="http://localhost/images/beans-bg.png" alt="Aesthetic Coffee Beans Texture" class="w-full h-full object-cover filter brightness-75">
+        <img src="/images/beans-bg.png" alt="Aesthetic Coffee Beans Texture" class="w-full h-full object-cover filter brightness-75">
         <div class="absolute inset-0 bg-gradient-to-b from-[#0F0D0B] via-[#0F0D0B]/85 to-[#0F0D0B]"></div>
     </div>
 
@@ -986,7 +1024,7 @@
         
         
         <div class="flex items-center gap-3">
-            <img src="http://localhost/images/logo-otewe.svg" alt="Otewe Logo" class="h-9 w-auto">
+            <img src="/images/logo-otewe.svg" alt="Otewe Logo" class="h-9 w-auto">
         </div>
 
         
@@ -1013,6 +1051,6 @@
     </div>
 </footer>
 
-    <script src="http://localhost/js/app.js" defer></script>
+    <script src="/js/app.js" defer></script>
 </body>
 </html>
