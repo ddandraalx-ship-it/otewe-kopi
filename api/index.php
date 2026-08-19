@@ -1,6 +1,5 @@
 <?php
 
-// Forward Vercel serverless requests to Laravel
 define('LARAVEL_START', microtime(true));
 
 // Auto-create writable storage directories in /tmp for Vercel Serverless environment
@@ -17,13 +16,18 @@ foreach ($storageDirs as $dir) {
     }
 }
 
-// Register Composer Autoloader
+// Set Vercel temp environment paths for serverless execution
+putenv('VIEW_COMPILED_PATH=/tmp/storage/framework/views');
+putenv('APP_CONFIG_CACHE=/tmp/storage/bootstrap/cache/config.php');
+putenv('APP_SERVICES_CACHE=/tmp/storage/bootstrap/cache/services.php');
+putenv('APP_PACKAGES_CACHE=/tmp/storage/bootstrap/cache/packages.php');
+putenv('APP_ROUTES_CACHE=/tmp/storage/bootstrap/cache/routes.php');
+putenv('APP_EVENTS_CACHE=/tmp/storage/bootstrap/cache/events.php');
+
 require __DIR__ . '/../vendor/autoload.php';
 
-// Bootstrap Laravel
 $app = require_once __DIR__ . '/../bootstrap/app.php';
 
-// Handle HTTP Request
 $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 
 $response = $kernel->handle(
